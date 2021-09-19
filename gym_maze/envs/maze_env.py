@@ -129,7 +129,7 @@ class RME(gym.Env):
           if(np.random.random()<0.5):
             self.state+=4
           else: 
-            seelf.state-=4
+            self.state-=4
 
 
 

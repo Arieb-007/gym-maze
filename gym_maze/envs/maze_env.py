@@ -63,7 +63,7 @@ class RME(gym.Env):
 
        # it is in bottom bound and up action
       elif(tr<0.8 and self.state in self.lower_bd):   
-        self.state = self.state+4
+        self.state = self.state - 4
 
       elif(self.state in self.up_bd):
         if(np.random.random() < 0.5 and self.state not in self.left_bd):  #left transition

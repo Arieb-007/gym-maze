@@ -92,7 +92,7 @@ class RME(gym.Env):
       elif(self.state in self.left_bd):  # action= left , but slip in ortho
         if(np.random.random() < 0.5 and self.state!=0):   # up tansition
           self.state = self.state-4
-        elif(np.random.random>0.5 and self.state!=8):  #down transition
+        elif(np.random.random()>0.5 and self.state!=8):  #down transition
           self.state +=4
         else:
           self.state = self.state

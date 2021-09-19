@@ -3,7 +3,7 @@ import numpy as np
 class RME(gym.Env):
   
   def __init__(self):
-    self.state_space = np.arange(0,12)
+    self.state_space = [0,1,2,3,4,6,7,8,9,10,11]
     self.state_space.remove(5)
     self.terminal = [3,7]
     self.action_space = [0,1,2,3]         #up ,left ,right ,down

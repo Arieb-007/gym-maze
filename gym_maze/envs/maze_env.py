@@ -172,7 +172,7 @@ class RME(gym.Env):
 
       elif(self.state in self.lower_bd):
         if(np.random.random() < 0.5 and self.state not in self.terminal):  #up slip
-          self.state=-4
+          self.state-=4
 
       else:
         if(tr<0.8):

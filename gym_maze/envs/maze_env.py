@@ -101,7 +101,7 @@ class RME(gym.Env):
          if(self.state!=self.terminal):
            self.state-=1
       elif(self.state in self.right_bd):
-         if(np.random.random() < 0.5 and self.state not in terminal): #up transition
+         if(np.random.random() < 0.5 and self.state not in self.terminal): #up transition
            self.state-=4
 
       # it is in upper boundary and left action

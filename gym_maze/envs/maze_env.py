@@ -61,7 +61,7 @@ class RME(gym.Env):
           self.state=self.state
 
        # it is in bottom bound and up action
-      elif(tr<0.8 and self.state in self.bottom_bd):   
+      elif(tr<0.8 and self.state in self.lower_bd):   
         self.state = self.state+4
 
       elif(self.state in self.up_bd):

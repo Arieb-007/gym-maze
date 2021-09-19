@@ -213,7 +213,7 @@ class RME(gym.Env):
         
 
       elif(self.state in self.up_bd):
-        if(np.random.random() < 0.5 and self.state!=0 and self.state not in terminal):  #left transition
+        if(np.random.random() < 0.5 and self.state!=0 and self.state not in self.terminal):  #left transition
           self.state-=1
         elif(np.random.random() > 0.5 and self.state not in self.terminal):#right
           self.state+=1

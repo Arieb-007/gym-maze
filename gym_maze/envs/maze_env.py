@@ -56,7 +56,7 @@ class RME(gym.Env):
           self.state = self.state+1
         elif(self.state==0):
           self.state = 0
-        elif(state!=3) :
+        elif(self.state!=3) :
           self.state+=1
         else:
           self.state=self.state
